@@ -1,10 +1,13 @@
- NCERT Hybrid Retrieval‑Augmented Generation (RAG) System
+📘NCERT Hybrid Retrieval‑Augmented Generation (RAG) System
 
 Intel® Unnati Industrial Training Program 2025
 A curriculum‑aligned, multimodal NCERT question‑answering system built using Hybrid Retrieval + RAG, supporting text, OCR, and voice queries, with grade‑specific filtering (Class 5–10) and strict answer grounding.
 
 
-TL;DR (Short Overview)
+
+
+📋TL;DR (Short Overview)
+
 
 
 | Item             | Description                                                      |
@@ -21,7 +24,11 @@ TL;DR (Short Overview)
 
 
 
-Problem Statement → Implementation Mapping
+
+
+🎯Problem Statement → Implementation Mapping
+
+
 
 | Requirement            | Implementation                       | Location                                           |
 | ---------------------- | ------------------------------------ | -------------------------------------------------- |
@@ -34,16 +41,23 @@ Problem Statement → Implementation Mapping
 | Re‑ranking             | MMR (diversity + relevance)          | `app.py`                                           |
 | Evaluation             | Metric + LLM‑based evaluation        | `evaluate_answers.py`, `llm_evaluate.py`           |
 
-End-to-End Workflow
+
+
+▶️End-to-End Workflow
 
 <img width="2013" height="1179" alt="image" src="https://github.com/user-attachments/assets/2609d4ed-4660-4fe3-949a-6828cc470b13" />
 
+
+
+
+🏗️ System Architecture
 
 <img width="2179" height="991" alt="image" src="https://github.com/user-attachments/assets/4b3627f3-6aae-4770-91d5-fda7ca4a988a" />
 
 
 
 🚀 Key Features
+
 📚 NCERT‑only, curriculum‑grounded answers
 
 🎯 Grade‑specific filtering (Class 5–10)
@@ -63,6 +77,8 @@ End-to-End Workflow
 📂 Source citation
 
 📊 Automated + LLM‑based evaluation
+
+
 
 
 

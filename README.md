@@ -1,4 +1,7 @@
-📘NCERT Hybrid Retrieval‑Augmented Generation (RAG) System
+# 📘 **NCERT HYBRID RETRIEVAL‑AUGMENTED GENERATION (RAG) SYSTEM**
+### **Intel® Unnati Industrial Training Program 2025**
+
+
 
 Intel® Unnati Industrial Training Program 2025
 A curriculum‑aligned, multimodal NCERT question‑answering system built using Hybrid Retrieval + RAG, supporting text, OCR, and voice queries, with grade‑specific filtering (Class 5–10) and strict answer grounding.
@@ -8,7 +11,9 @@ Projet Overview
 This project was developed as part of the Intel® Unnati Industrial Training Program with the objective of building a multilingual, grade‑specific NCERT doubt‑solving system using a Retrieval‑Augmented Generation (RAG) approach. The system is designed to answer student queries strictly from NCERT textbooks for Classes 5 to 10, ensuring factual correctness and preventing hallucinations. The workflow begins with multi‑modal user input, where questions can be provided via text, OCR‑extracted images, or voice recordings. Voice queries are transcribed using Whisper, while OCR inputs are processed using OpenCV and Tesseract. Once the query is obtained, the language is detected and expanded into NCERT‑style reformulations to improve retrieval recall. A hybrid retrieval mechanism is then employed, combining dense semantic search using multilingual‑e5 embeddings stored in ChromaDB with sparse keyword‑based TF‑IDF retrieval. These results are further refined using Maximal Marginal Relevance (MMR) re‑ranking to ensure diverse and relevant context selection. Grade‑specific filtering is strictly enforced so that students only receive answers aligned with their academic level. The final response is generated using the Mistral language model served locally via Ollama, with strict prompting rules that limit the model to the retrieved NCERT context only. Along with the answer, the system provides a concise summary and source references for transparency. To validate system quality, both automated and LLM‑based evaluation pipelines are implemented, along with a user feedback mechanism. The entire solution is designed to be locally deployable, reproducible, and Intel‑friendly, demonstrating a complete, well‑engineered educational RAG system rather than a generic chatbot.
 
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/48ca51ea-da4d-4c74-a997-86d644ac7349" />
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/ea0339fd-6b0a-4c42-b04b-c5ecc8f08ccf" />
 
 
 
@@ -374,6 +379,9 @@ NcertData/
 chroma_ncert_db/
 doc_embeddings.pkl
 sparse_index.pkl
+
+
+
 
 
 
